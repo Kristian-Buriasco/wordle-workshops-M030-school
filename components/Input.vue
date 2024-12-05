@@ -20,7 +20,7 @@ export default {
         return false
       }
 
-      if(!words.includes(this.guess)) {
+      if(!words.includes(this.guess.toLowerCase())) {
         this.error = 'La parola non è valida'
         return false
       }
@@ -31,7 +31,7 @@ export default {
       this.error = null
 
       if(!this.validateGuess()) { return }
-      this.$emit('guess', this.guess)
+      this.$emit('guess', this.guess.toUpperCase())
       this.guess = ''
     }
   }

@@ -21,6 +21,7 @@ export default {
   },
   computed: {
     characters() {
+      this.guess = this.guess.toUpperCase()
       if(this.guess.length !== 5)
         return ['', '', '', '', '']
 
