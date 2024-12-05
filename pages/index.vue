@@ -40,7 +40,6 @@ export default {
     board() {
       // TODO (opzionale) mostrare sempre la board completa con 6 righe
       return this.guesses.concat(['', '', '', '', '', '']).slice(0, 6)
-
     },
     gameOver() {
       // TODO restituire true quando il gioco è finito: il gioco finisce se indovini la parola o raggiungi 6 tentativi
